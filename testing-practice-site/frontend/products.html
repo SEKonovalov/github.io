@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практика тестирования - Продукты</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Портал для практики тестирования</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="products.html">Продукты</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                <li><a href="login.html">Вход</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-list">
+            <h2>Наши продукты</h2>
+            
+            <div class="product-filters">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="web">Веб-приложения</button>
+                <button class="filter-btn" data-filter="mobile">Мобильные приложения</button>
+            </div>
+
+            <div class="products">
+                <div class="product-card" data-category="web">
+                    <h3>Тестовое веб-приложение 1</h3>
+                    <p>Приложение для тестирования UI элементов</p>
+                    <p class="price">Бесплатно</p>
+                    <button class="details-btn">Подробнее</button>
+                </div>
+                
+                <div class="product-card" data-category="web">
+                    <h3>Тестовое веб-приложение 2</h3>
+                    <p>Приложение для тестирования API</p>
+                    <p class="price">Бесплатно</p>
+                    <button class="details-btn">Подробнее</button>
+                </div>
+                
+                <div class="product-card" data-category="mobile">
+                    <h3>Мобильное тестовое приложение</h3>
+                    <p>Для тестирования на iOS и Android</p>
+                    <p class="price">Бесплатно</p>
+                    <button class="details-btn">Подробнее</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="special-offer">
+            <h3>Специальное предложение</h3>
+            <div class="offer-timer">
+                До конца акции осталось: <span id="countdown">24:59:59</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Практика тестирования. Все права защищены.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

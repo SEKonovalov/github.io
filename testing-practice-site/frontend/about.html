@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практика тестирования - О нас</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Портал для практики тестирования</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="products.html">Продукты</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                <li><a href="login.html">Вход</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-content">
+            <h2>О нашем проекте</h2>
+            <p>Этот сайт создан специально для тренировки навыков тестирования веб-приложений.</p>
+            
+            <div class="team">
+                <h3>Наша команда</h3>
+                <div class="member">
+                    <h4>Иван Иванов</h4>
+                    <p>Главный тестировщик</p>
+                </div>
+                <div class="member">
+                    <h4>Петр Петров</h4>
+                    <p>Разработчик</p>
+                </div>
+            </div>
+
+            <div class="history">
+                <h3>История проекта</h3>
+                <p>Проект был создан в 2023 году для помощи начинающим тестировщикам.</p>
+            </div>
+        </section>
+
+        <section class="test-block">
+            <h3>Элементы для тестирования</h3>
+            <div class="tabs">
+                <button class="tab-button active" data-tab="tab1">Вкладка 1</button>
+                <button class="tab-button" data-tab="tab2">Вкладка 2</button>
+                <div id="tab1" class="tab-content" style="display: block;">
+                    Содержимое вкладки 1
+                </div>
+                <div id="tab2" class="tab-content">
+                    Содержимое вкладки 2
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Практика тестирования. Все права защищены.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
