@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практика тестирования - Вход</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Портал для практики тестирования</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="products.html">Продукты</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                <li><a href="login.html">Вход</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="login-form">
+            <h2>Форма входа</h2>
+            <form id="loginForm">
+                <div>
+                    <label for="login-username">Имя пользователя:</label>
+                    <input type="text" id="login-username" name="username" required>
+                </div>
+                <div>
+                    <label for="login-password">Пароль:</label>
+                    <input type="password" id="login-password" name="password" required>
+                </div>
+                <div>
+                    <label>
+                        <input type="checkbox" name="remember"> Запомнить меня
+                    </label>
+                </div>
+                <button type="submit">Войти</button>
+                <p id="loginError" class="error-message"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Практика тестирования. Все права защищены.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

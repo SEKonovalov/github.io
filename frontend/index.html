@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практика тестирования - Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Портал для практики тестирования</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="products.html">Продукты</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                <li><a href="login.html">Вход</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h2>Добро пожаловать на сайт для практики тестирования!</h2>
+            <p>Этот сайт создан специально для отработки навыков тестировщика.</p>
+        </section>
+
+        <section class="registration-form">
+            <h3>Форма регистрации</h3>
+            <form id="regForm">
+                <div>
+                    <label for="username">Имя пользователя:</label>
+                    <input type="text" id="username" name="username" required minlength="4">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password" required minlength="6">
+                </div>
+                <div>
+                    <label for="confirm-password">Подтвердите пароль:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <div>
+                    <label>
+                        <input type="checkbox" name="terms" required> Я согласен с условиями
+                    </label>
+                </div>
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </section>
+
+        <section class="dynamic-content">
+            <h3>Динамически загружаемый контент</h3>
+            <button id="loadData">Загрузить данные</button>
+            <div id="dataContainer"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Практика тестирования. Все права защищены.</p>
+    </footer>
+
+    <!-- Модальное окно успешной регистрации -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Регистрация успешна! 🎉</h3>
+            <p>Ваш аккаунт был успешно создан.</p>
+            <button id="modalOkBtn">Хорошо</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
